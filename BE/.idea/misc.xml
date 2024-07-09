@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:21e9591d9286c7f14052f5eacaef115a71c8a59a46a2c64a7ab05ab9c375c1ab
-size 279
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_22" default="true" project-jdk-name="openjdk-22" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

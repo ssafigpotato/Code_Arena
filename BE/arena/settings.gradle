@@ -1,3 +1,1 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6faa32dd0b87e0cefdb604367bbedff70775fce6d43e83064f894c814b02a7c4
-size 27
+rootProject.name = 'arena'
