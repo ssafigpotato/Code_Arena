@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:24b1c20c480b21dd64dba61ab88004478d5941486cea5bb0fb1ff8545b90eb4d
-size 370
+package com.example.arena.domain.member.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/member")
+public class MemberController {
+
+    @GetMapping("/")
+    public void signup(){
+    }
+}
