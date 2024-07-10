@@ -1,16 +1,3 @@
-package com.example.arena.domain.group.dto.response;
-
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import org.checkerframework.checker.units.qual.A;
-
-import java.util.UUID;
-
-@Getter
-@NoArgsConstructor
-@AllArgsConstructor
-public class GroupResponse {
-    private UUID groupId;
-    private String groupName;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:fea6cdf2b305f0d94c7ec533c03d6f6cfb546cd0583c6081702d6e626936175a
+size 379
