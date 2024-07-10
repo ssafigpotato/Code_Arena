@@ -1,15 +1,16 @@
-package com.example.arena.domain.member.dto.response;
+package com.example.arena.domain.member.dto.request;
 
 import com.example.arena.domain.member.entity.Role;
 import lombok.Builder;
+import lombok.Getter;
 
 import java.util.Date;
-import java.util.UUID;
 
+@Getter
 @Builder
-public class MemberResponse {
-    private UUID id;
+public class SignUpRequest {
     private String email;
+    private String password;
     private String name;
     private String nickname;
     private Date birth;
