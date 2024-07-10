@@ -1,3 +1,14 @@
 server:
   port: 8080
 
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ARENA
+    username: ${MYSQL_USER}
+    password: ${MySQL_PASSWORD}
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: create
