@@ -1,20 +1,3 @@
-package com.example.arena.domain.group.entity;
-
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import lombok.AccessLevel;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-
-import java.util.UUID;
-
-@Entity
-@Getter
-@NoArgsConstructor(access = AccessLevel.PROTECTED)
-public class Group {
-    @Id
-    @Column(columnDefinition = "BINARY(16)")
-    private UUID id;
-    private String name;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:accc5ee22ee8c3f71fbddce128488037301f798156c667ce1b4f04a372a5af0f
+size 472
