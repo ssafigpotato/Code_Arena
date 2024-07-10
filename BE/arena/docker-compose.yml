@@ -10,6 +10,17 @@ services:
     restart: always
     networks:
       - backend
+  kurento-media-server:
+    image: kurento/kurento-media-server:latest
+    container_name: kurento-media-server
+    restart: unless-stopped
+    ports:
+      - "8888:8888"
+    environment:
+      - KMS_STUN_IP=stun.l.google.com
+      - KMS_STUN_PORT=19302
+    networks:
+      - backend
 
 networks:
   backend:
