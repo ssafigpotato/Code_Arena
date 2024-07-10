@@ -17,4 +17,5 @@ public class Group {
     @Column(columnDefinition = "BINARY(16)")
     private UUID id;
     private String name;
+    private UUID leaderId;
 }
