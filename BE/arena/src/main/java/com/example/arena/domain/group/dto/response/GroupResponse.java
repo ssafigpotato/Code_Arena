@@ -13,4 +13,5 @@ import java.util.UUID;
 public class GroupResponse {
     private UUID groupId;
     private String groupName;
+    private UUID leaderId;
 }
