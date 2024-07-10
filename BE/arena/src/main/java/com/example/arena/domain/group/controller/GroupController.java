@@ -1,15 +1,3 @@
-package com.example.arena.domain.group.controller;
-
-import com.example.arena.domain.group.service.GroupService;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
-@RestController
-@RequestMapping("/group")
-public class GroupController {
-    private final GroupService groupService;
-
-    public GroupController(GroupService groupService) {
-        this.groupService = groupService;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a901f72a36575798c77be2f55a9d059eb47e2ceef97bc01abe1abfdfb3b52926
+size 1306
