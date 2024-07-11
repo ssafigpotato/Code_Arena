@@ -9,9 +9,8 @@ import lombok.NoArgsConstructor;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class BoardRequest {
+public class UpdateBoardRequest {
 	private UUID memberId;
 	private String title;
 	private String content;
-	private String type;
 }
