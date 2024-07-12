@@ -1,14 +1,3 @@
-package com.example.arena.domain.community.mapper;
-
-import org.springframework.stereotype.Component;
-
-import com.example.arena.domain.community.dto.request.CommentResponse;
-import com.example.arena.domain.community.entity.Comment;
-
-@Component
-public class CommentMapper {
-	public CommentResponse entityToReponse(Comment comment) {
-		return new CommentResponse(comment.getId(), comment.getMemberId(), comment.getBoardId(), comment.getContent(),
-				comment.getLikes(), comment.isSecret());
-	}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:aca386a1287d172fc317cf0a0fcbcdcce3f0b61002609d431dd0a179426fe12d
+size 767

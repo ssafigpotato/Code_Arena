@@ -1,22 +1,3 @@
-package com.example.arena.domain.community.entity;
-
-import java.util.UUID;
-
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import lombok.Getter;
-
-@Entity
-@Getter
-public class Comment {
-	@Id
-	@Column(columnDefinition = "BINARY(16)")
-	private UUID id;
-	private UUID memberId;
-	private UUID boardId;
-	private String content;
-	@Column(columnDefinition = "int default 0")
-	private int likes;
-	private boolean isSecret;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:cfe9a8cfbd22d793bfdd39ea344125a09f3c0185f0b2d8dd8054b472a70b0e06
+size 663
