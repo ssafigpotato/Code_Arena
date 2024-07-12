@@ -9,6 +9,6 @@ import com.example.arena.domain.community.entity.CommentLike;
 
 public interface CommentLikeRepository extends JpaRepository<CommentLike, UUID> {
 
-	Optional<CommentLike> findByMemberAndBoard(UUID memberId, UUID boardId);
+	Optional<CommentLike> findByMemberIdAndBoardId(UUID memberId, UUID boardId);
 
 }
