@@ -1,4 +1,4 @@
-package com.example.arena.domain.community.dto.request;
+package com.example.arena.domain.community.dto.response;
 
 import java.util.UUID;
 
@@ -9,10 +9,12 @@ import lombok.NoArgsConstructor;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class BoardRequest {
+public class LikeResponse {
 	private UUID boardId;
 	private UUID memberId;
-	private String title;
-	private String content;
-	private String type;
+	private int likes;
+
+	public LikeResponse(int likes) {
+		this.likes = likes;
+	}
 }
