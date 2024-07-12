@@ -9,11 +9,9 @@ import lombok.NoArgsConstructor;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class CommentResponse {
+public class CommentLikeRequest {
 	private UUID commentId;
 	private UUID memberId;
 	private UUID boardId;
-	private String content;
-	private int likes;
-	private boolean isSecret;
+	
 }
