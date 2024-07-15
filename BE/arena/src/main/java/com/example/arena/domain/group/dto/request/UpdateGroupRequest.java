@@ -1,12 +1,3 @@
-package com.example.arena.domain.group.dto.request;
-
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-
-@Getter
-@NoArgsConstructor
-@AllArgsConstructor
-public class UpdateGroupRequest {
-    private String groupName;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:985ae79af942f9e150c26625f828155571659b470c7df082c773cecbfd69ae21
+size 256
