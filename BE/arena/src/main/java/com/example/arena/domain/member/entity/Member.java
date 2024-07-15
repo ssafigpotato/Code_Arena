@@ -1,17 +1,3 @@
-package com.example.arena.domain.member.entity;
-
-import java.util.UUID;
-
-import com.github.f4b6a3.ulid.UlidCreator;
-
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-
-@Entity
-public class Member {
-	@Id
-	@Column(columnDefinition = "BINARY(16)")
-	private UUID id = UlidCreator.getMonotonicUlid().toUuid();
-	private String nickName;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:af2f6ac4c9fd66ff613c5c8afd80282941f4d291fda4231c018eb586977a8286
+size 1329

@@ -1,14 +1,3 @@
-package com.example.arena.domain.member.repository;
-
-import java.util.UUID;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.query.Param;
-
-import com.example.arena.domain.member.entity.Member;
-
-public interface MemberRepository extends JpaRepository<Member, UUID> {
-	@Query("SELECT m.nickName FROM Member m WHERE m.id = :memberId")
-	String findNickNameByMemberId(@Param("memberId") UUID memberId);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:eb4fbc4702412f8f2cc287ec917664c5d47a0f935ca2d3fcff3bc92ea8507430
+size 667
