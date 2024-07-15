@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d1d6147130faac4ff82cbb0a3d2d100f9d8a00a0c5b9e1f8cf4ee13c64671a96
-size 192
+## 작업 내용
+- <ticket#> <타입> <메시지>
+
+## 작업 이유
+
+### 사용 기술
+
+### 레퍼런스
+
+## 중점 리뷰 사항
+
+## 체크리스트
+- [ ] 테스트 여부
+- [ ] 작동 확인

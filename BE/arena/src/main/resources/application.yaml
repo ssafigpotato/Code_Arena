@@ -1,14 +1,3 @@
-server:
-  port: 8080
-
-spring:
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/ARENA
-    username: ${MYSQL_USER}
-    password: ${MySQL_PASSWORD}
-  jpa:
-    database: mysql
-    show-sql: true
-    hibernate:
-      ddl-auto: create
+version https://git-lfs.github.com/spec/v1
+oid sha256:a443829111fe43e63db5e6658d4b6e4f573e9f99ce9eadda388e850e7f199680
+size 293
