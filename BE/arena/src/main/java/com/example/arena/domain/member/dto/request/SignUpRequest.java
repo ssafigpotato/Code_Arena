@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e627f9e8f300d4de27972954144115c230120177a5aecb39886a46fbd8412632
-size 425
+package com.example.arena.domain.member.dto.request;
+
+import com.example.arena.domain.member.entity.Role;
+import lombok.*;
+
+import java.util.Date;
+
+@Getter
+@Builder
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+public class SignUpRequest {
+    private String email;
+    private String password;
+    private String name;
+    private String nickname;
+    private Date birth;
+    private Role role;
+    private String image;
+}

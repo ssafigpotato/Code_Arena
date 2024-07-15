@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6004cb7982641e0fb145be05240bdfb6375e471a40498ad555db3a56a9970b1a
-size 483
+package com.example.arena.domain.config;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+
+@Configuration
+public class CorsMvcConfig implements WebMvcConfigurer {
+
+    @Override
+    public void addCorsMappings(CorsRegistry corsRegistry) {
+
+        corsRegistry.addMapping("/**")
+                .allowedOrigins("*");
+    }
+}

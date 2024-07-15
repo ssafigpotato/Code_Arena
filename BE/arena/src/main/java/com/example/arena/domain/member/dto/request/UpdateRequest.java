@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0cdcc587c8244e6bd4387e92813912928fb926627721fa31b53c8e032e2124de
-size 289
+package com.example.arena.domain.member.dto.request;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+public class UpdateRequest {
+    private String changeNickname;
+    private String changeImage;
+}

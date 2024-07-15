@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:924f48b787d59824e6a20299ed110bbbdd8eb4a6f2c80b5f3578633733b07726
-size 416
+package com.example.arena.domain.community.dto.response;
+
+import java.util.UUID;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+public class LikeCommentResponse {
+	private UUID commentId;
+	private UUID memberId;
+	private UUID boardId;
+	private int likes;
+
+	public LikeCommentResponse(int likes) {
+		this.likes = likes;
+	}
+
+}

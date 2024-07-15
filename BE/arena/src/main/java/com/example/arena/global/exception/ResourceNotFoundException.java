@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f4edf1463250475898098df32a981b6fe43d4ecfd9b243535ce1398b28649ad1
-size 341
+package com.example.arena.global.exception;
+
+public class ResourceNotFoundException extends RuntimeException {
+	private static final String MESSAGE = "해당 데이터가 존재하지 않습니다.";
+
+	public ResourceNotFoundException() {
+		super(MESSAGE);
+	}
+	
+	public ResourceNotFoundException(String message) {
+		super(message);
+	}
+	
+	
+}

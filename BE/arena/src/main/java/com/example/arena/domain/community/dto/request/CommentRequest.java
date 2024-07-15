@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bb71955a58901472339039bfaf5bd634fe6ad23ee0d5d70a6c94c3a22c2f2153
-size 349
+package com.example.arena.domain.community.dto.request;
+
+import java.util.UUID;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+public class CommentRequest {
+	private UUID memberId;
+	private UUID boardId;
+	private String content;
+	private boolean isSecret;
+}

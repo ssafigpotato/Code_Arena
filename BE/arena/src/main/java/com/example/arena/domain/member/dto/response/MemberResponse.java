@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1d2f865e023988d1eb21e00959a9021a5ef525b82685551d1bea022cbf939a61
-size 379
+package com.example.arena.domain.member.dto.response;
+
+import com.example.arena.domain.member.entity.Role;
+import lombok.Builder;
+import lombok.Getter;
+
+import java.util.Date;
+
+@Getter
+@Builder
+public class MemberResponse {
+    private String email;
+    private String name;
+    private String nickname;
+    private Date birth;
+    private Role role;
+    private String image;
+}
