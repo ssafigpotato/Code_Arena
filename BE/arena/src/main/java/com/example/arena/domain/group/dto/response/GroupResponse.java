@@ -14,4 +14,5 @@ public class GroupResponse {
     private UUID groupId;
     private String groupName;
     private UUID leaderId;
+    private Integer maxNum;
 }
