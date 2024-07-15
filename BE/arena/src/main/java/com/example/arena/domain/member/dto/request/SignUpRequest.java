@@ -1,13 +1,15 @@
 package com.example.arena.domain.member.dto.request;
 
 import com.example.arena.domain.member.entity.Role;
-import lombok.Builder;
-import lombok.Getter;
+import lombok.*;
 
 import java.util.Date;
 
 @Getter
 @Builder
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class SignUpRequest {
     private String email;
     private String password;
