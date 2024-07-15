@@ -1,7 +1,22 @@
-export default function write() {
+"use client";
+
+import styled from "styled-components";
+import RoomList from "@/components/dashboard/RoomList";
+import GroupList from "@/components/dashboard/GroupList";
+
+export default function dashboard() {
   return (
     <>
-      <h1>폰트 테스트</h1>
+      <Wrapper>
+        <RoomList />
+        <GroupList />
+      </Wrapper>
     </>
   );
 }
+
+const Wrapper = styled.div`
+  max-width: 1200px;
+  width: 100vw;
+  margin: 5px auto;
+`;
