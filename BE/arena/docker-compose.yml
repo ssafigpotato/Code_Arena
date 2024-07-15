@@ -1,26 +1,3 @@
-services:
-  db:
-    image: mysql:8.0
-    container_name: db
-    ports:
-      - 3306:3306
-    env_file: .env
-    environment:
-      TZ: Asia/Seoul
-    restart: always
-    networks:
-      - backend
-  kurento-media-server:
-    image: kurento/kurento-media-server:latest
-    container_name: kurento-media-server
-    restart: unless-stopped
-    ports:
-      - "8888:8888"
-    environment:
-      - KMS_STUN_IP=stun.l.google.com
-      - KMS_STUN_PORT=19302
-    networks:
-      - backend
-
-networks:
-  backend:
+version https://git-lfs.github.com/spec/v1
+oid sha256:ffe4ba886e489f045010f32f94faade7c63f305c6bb059a05ea9f2d6514df125
+size 501
