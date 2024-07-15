@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ab8e1e32f6de01c9ed314b53f1e312f0aecbdea98bf536bd8b84fa0bb11f034e
-size 317
+function Interviewer() {
+  return <h1>면접관 화면입니다.</h1>;
+}
+
+function Interviewee() {
+  return <h1>응시자 화면입니다.</h1>;
+}
+
+export default function Index() {
+  var type = 1;
+
+  if (type === 0) {
+    return <Interviewer />;
+  } else {
+    return <Interviewee />;
+  }
+
+  return <main></main>;
+}
