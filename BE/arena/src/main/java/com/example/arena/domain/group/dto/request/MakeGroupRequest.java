@@ -11,4 +11,5 @@ import lombok.NoArgsConstructor;
 public class MakeGroupRequest {
     private String groupName;
     private GroupType groupType;
+    private Integer maxNum;
 }
