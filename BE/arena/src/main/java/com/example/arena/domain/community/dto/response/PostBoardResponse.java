@@ -1,4 +1,4 @@
-package com.example.arena.domain.community.dto.request;
+package com.example.arena.domain.community.dto.response;
 
 import java.util.UUID;
 
@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class BoardRequest {
+public class PostBoardResponse {
 	private UUID boardId;
 	private UUID memberId;
 	private String title;
