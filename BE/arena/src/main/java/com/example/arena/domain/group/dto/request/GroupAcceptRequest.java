@@ -9,8 +9,6 @@ import java.util.UUID;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class UpdateGroupRequest {
+public class GroupAcceptRequest {
     private UUID groupId;
-    private String curName;
-    private String changeName;
 }
