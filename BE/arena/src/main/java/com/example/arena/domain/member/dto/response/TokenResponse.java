@@ -1,15 +1,3 @@
-package com.example.arena.domain.member.dto.response;
-import jakarta.validation.constraints.NotBlank;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-
-@Getter
-@NoArgsConstructor
-@AllArgsConstructor
-public class TokenResponse {
-    @NotBlank
-    private String accessToken;
-    @NotBlank
-    private String refreshToken;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1f684cb62af83693c8c8a2977f60b9220a7cc460d25dcf21395429466f425782
+size 395
