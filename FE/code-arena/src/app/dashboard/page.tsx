@@ -16,7 +16,8 @@ export default function dashboard() {
 }
 
 const Wrapper = styled.div`
-  max-width: 1200px;
+  max-width: 75%;
+  min-width: 30rem;
   width: 100vw;
   margin: 5px auto;
 `;

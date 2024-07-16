@@ -1,14 +1,3 @@
-import styled from "styled-components";
-
-const RoomList: () => JSX.Element = () => {
-  return <RoomTitle>방 목록</RoomTitle>;
-};
-
-const RoomTitle = styled.div`
-  font-size: 24px;
-  font-weight: 700;
-  padding: 20px 0px;
-  background-color: ;
-`;
-
-export default RoomList;
+version https://git-lfs.github.com/spec/v1
+oid sha256:4fecace0b52c95cbcc47bb2cad5ce937d3f0f4483953ef509b246cb5fa39d460
+size 7828
