@@ -4,9 +4,13 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+import java.util.UUID;
+
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
 public class UpdateGroupRequest {
-    private String groupName;
+    private UUID groupId;
+    private String curName;
+    private String changeName;
 }

@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:69a10d19884eacae2e2363024965585ee1726577c149ebd6429953d2b7bc39e2
-size 412
+import React from "react";
+import styled from "styled-components";
+const Wrapper = styled.div`
+  max-width: 1200px;
+  width: 100vw;
+  min-height: 10vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  @media (max-width: 768px) {
+  }
+`;
+
+const Footer = () => {
+  return (
+    <Wrapper>
+      <footer>여기는 푸터 자리</footer>
+    </Wrapper>
+  );
+};
+
+export default Footer;
