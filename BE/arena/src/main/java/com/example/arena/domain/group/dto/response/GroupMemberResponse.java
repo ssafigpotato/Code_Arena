@@ -1,18 +1,17 @@
 package com.example.arena.domain.group.dto.response;
 
+import com.example.arena.domain.group.entity.GroupInviteCode;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import org.checkerframework.checker.units.qual.A;
 
 import java.util.UUID;
 
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class GroupResponse {
+public class GroupMemberResponse {
     private UUID groupId;
-    private String groupName;
-    private UUID leaderId;
-    private Integer maxNum;
+    private UUID memberId;
+    private GroupInviteCode inviteCode;
 }

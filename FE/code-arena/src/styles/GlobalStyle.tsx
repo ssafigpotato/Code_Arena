@@ -1,13 +1,3 @@
-"use client";
-import { createGlobalStyle } from "styled-components";
-import reset from "styled-reset";
-import "pretendard/dist/web/static/pretendard.css";
-
-const GlobalStyle = createGlobalStyle`
-  ${reset}
-  body {
-    font-family: 'Pretendard', sans-serif;
-  }
-`;
-
-export default GlobalStyle;
+version https://git-lfs.github.com/spec/v1
+oid sha256:3f06adcfacbe59639ef360b093094f07e3fbc06c5f3d24e65c79e9420059d706
+size 609
