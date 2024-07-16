@@ -1,17 +1,3 @@
-server:
-  port: 8080
-
-spring:
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/ARENA?serverTimezone=Asia/Seoul
-    username: jinjoowon
-    password: root1234!
-  jpa:
-    database: mysql
-    show-sql: true
-    hibernate:
-      ddl-auto: create
-
-jwt:
-  secret: vmfhaltmskdlstkfkdgodyroqkfwkdbalroqkfwkdbalaaaaaaaaaaaaaaaabbbbb
+version https://git-lfs.github.com/spec/v1
+oid sha256:276615f8635f5758a160c301f51d2cf589bc1cb94867fb40826127448403e6a8
+size 556
