@@ -1,24 +1,3 @@
-import React from "react";
-import styled from "styled-components";
-const Wrapper = styled.div`
-  max-width: 1200px;
-  width: 100vw;
-  min-height: 10vh;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  color: #ffffff;
-
-  @media (max-width: 768px) {
-  }
-`;
-
-const Header = () => {
-  return (
-    <Wrapper>
-      <header>여기는 헤더 자리</header>
-    </Wrapper>
-  );
-};
-
-export default Header;
+version https://git-lfs.github.com/spec/v1
+oid sha256:b07dd1587206aef20d102d5ac625264e9378a12e6af4d0b0450ff5e83d86ac26
+size 413
