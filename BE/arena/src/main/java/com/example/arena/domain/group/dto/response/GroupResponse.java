@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4369bd7e23ba949bb78d10cbe0ff492243ba3ae5a756828541769c7ffed75131
-size 407
+package com.example.arena.domain.group.dto.response;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import org.checkerframework.checker.units.qual.A;
+
+import java.util.UUID;
+
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+public class GroupResponse {
+    private UUID groupId;
+    private String groupName;
+    private UUID leaderId;
+    private Integer maxNum;
+}
