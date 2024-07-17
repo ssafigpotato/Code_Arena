@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e1f70f750e77724559310e4948b01655961cec3d8bb8bf4b9cd5faac2da9f0d9
-size 376
+package com.example.arena.domain.community.dto.request;
+
+import java.util.UUID;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+@Setter
+public class PostBoardRequest {
+	private UUID memberId;
+	private String title;
+	private String content;
+	private String type;
+}
