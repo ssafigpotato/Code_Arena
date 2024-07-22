@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b62cc2fe5d5a3b1beffe8ae937c781b0f052c24a846ce71255c52808aaebfe4b
-size 473
+"use client";
+
+import WriteContainer from "@/components/board/write/WriteContainer";
+import WriteTab from "@/components/board/write/WriteTab";
+import styled from "styled-components";
+
+export default function write() {
+  return (
+    <>
+      <Wrapper>
+        <WriteTab />
+        <WriteContainer />
+      </Wrapper>
+    </>
+  );
+}
+
+const Wrapper = styled.div`
+  font-family: Pretendard;
+  display: flex;
+  flex-direction: column;
+
+  width: 1200px;
+  margin: 20px auto;
+`;
