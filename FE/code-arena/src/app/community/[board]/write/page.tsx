@@ -20,6 +20,6 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
 
-  width: 1200px;
-  margin: 20px auto;
+  width: 1000px;
+  margin: 0px auto;
 `;
