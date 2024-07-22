@@ -1,7 +1,5 @@
 package com.example.arena.domain.community.dto.response;
 
-import java.util.Date;
-
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -14,6 +12,6 @@ public class SearchBoardResponse {
 	private String title;
 	private String nickname;
 //	private Date createdAt; 구현 필요
-	private int likes;
 	private int comments;
+	private int likes;
 }
