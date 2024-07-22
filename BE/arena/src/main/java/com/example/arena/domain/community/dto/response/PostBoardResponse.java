@@ -1,18 +1,3 @@
-package com.example.arena.domain.community.dto.response;
-
-import java.util.UUID;
-
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-
-@Getter
-@NoArgsConstructor
-@AllArgsConstructor
-public class PostBoardResponse {
-	private UUID boardId;
-	private UUID memberId;
-	private String title;
-	private String content;
-	private String type;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e5b269cda038b79bf1a5d663dadb0eaeccec756287cb2513df0fe7eeca4209e3
+size 347
