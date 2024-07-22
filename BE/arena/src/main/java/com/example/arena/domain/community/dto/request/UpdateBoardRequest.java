@@ -14,5 +14,4 @@ public class UpdateBoardRequest {
 	private UUID memberId;
 	private String title;
 	private String content;
-	private String type;
 }
