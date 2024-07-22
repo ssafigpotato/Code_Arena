@@ -1,20 +1,3 @@
-package com.example.arena.domain.member.dto.response;
-
-import com.example.arena.domain.member.entity.Role;
-import lombok.Builder;
-import lombok.Getter;
-
-import java.util.Date;
-import java.util.UUID;
-
-@Getter
-@Builder
-public class MemberResponse {
-    private UUID id;
-    private String email;
-    private String name;
-    private String nickname;
-    private Date birth;
-    private Role role;
-    private String image;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7e39e5e2c25cc443359210d625c4877cb60490164e97745f6458019d26afda1e
+size 529
