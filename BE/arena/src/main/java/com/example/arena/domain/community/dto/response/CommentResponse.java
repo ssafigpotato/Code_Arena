@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3bc5a01f4a51af9f3b6798395da73c6ea47ddd8b9e9aae268af08f7f6b621cda
-size 396
+package com.example.arena.domain.community.dto.response;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+public class CommentResponse {
+	private String content;
+	private int likes;
+	private boolean isSecret;
+	private String nickname;
+}

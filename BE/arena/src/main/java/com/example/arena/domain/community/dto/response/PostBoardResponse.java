@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3580d136cb3ada2ec1d2347ac204bc691796571cff82885eec7488ecd42a7d2c
-size 371
+package com.example.arena.domain.community.dto.response;
+
+import java.util.UUID;
+
+import com.example.arena.domain.community.entity.BoardType;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+public class PostBoardResponse {
+	private UUID boardId;
+	private String title;
+	private String content;
+	private BoardType type;
+}
