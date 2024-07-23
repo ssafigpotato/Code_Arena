@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:914f6adb76efde6c9a55c692c6e5aea59910f81151cad0d95d58edd8ed6e6718
-size 337
+package com.example.arena.domain.community.dto.response;
+
+import com.example.arena.domain.community.entity.Board;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+public class BoardResponse {
+	private Board board;
+	private String memberNickName;
+}
