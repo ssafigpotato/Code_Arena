@@ -1,21 +1,3 @@
-"use client";
-
-import styled from "styled-components";
-import RoomList from "@/components/dashboard/RoomList";
-import GroupList from "@/components/dashboard/GroupList";
-
-export default function dashboard() {
-  return (
-    <>
-      <Wrapper>
-        <RoomList />
-        <GroupList />
-      </Wrapper>
-    </>
-  );
-}
-
-const Wrapper = styled.div`
-  width: 1200px;
-  margin: 5px auto;
-`;
+version https://git-lfs.github.com/spec/v1
+oid sha256:af25da30d492001106ccc7da1078ddbb42f4a7f5ed3a5248f73924cf01abc20b
+size 386
