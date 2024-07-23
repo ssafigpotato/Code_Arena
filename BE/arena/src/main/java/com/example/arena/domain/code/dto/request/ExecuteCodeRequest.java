@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0629146006c245d87384042241ffa5a5f92c5dd312c8aaef069a2669031009ce
-size 333
+package com.example.arena.domain.code.dto.request;
+
+import com.example.arena.domain.code.entity.Language;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+public class ExecuteCodeRequest {
+	private String content;
+	private Language language;
+	private String input;
+	private String expectedOutput;
+}
