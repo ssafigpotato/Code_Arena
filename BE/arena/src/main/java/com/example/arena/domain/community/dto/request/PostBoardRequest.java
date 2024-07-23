@@ -1,5 +1,7 @@
 package com.example.arena.domain.community.dto.request;
 
+import com.example.arena.domain.community.entity.BoardType;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -12,5 +14,5 @@ import lombok.Setter;
 public class PostBoardRequest {
 	private String title;
 	private String content;
-	private String type;
+	private BoardType type;
 }
