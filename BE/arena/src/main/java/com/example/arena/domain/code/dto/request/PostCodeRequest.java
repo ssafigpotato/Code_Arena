@@ -1,4 +1,4 @@
-package com.example.arena.domain.code.dto.response;
+package com.example.arena.domain.code.dto.request;
 
 import com.example.arena.domain.code.entity.Language;
 
@@ -9,9 +9,7 @@ import lombok.NoArgsConstructor;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class CodeResponse {
-	// room 이름
-	// 맴버이름
+public class PostCodeRequest {
 	private String problem;
 	private Language language;
 	private String content;
