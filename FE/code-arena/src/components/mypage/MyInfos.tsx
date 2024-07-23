@@ -1,24 +1,3 @@
-import React, { useState, useRef, useEffect } from "react";
-import styled from "styled-components";
-import BorderButton from "@/components/common/button/BorderButton";
-import Link from "next/link";
-
-const Wrapper = styled.div`
-  display: flex;
-  height: 20rem;
-  width: 30rem;
-  background-color: #ffffff;
-  border-radius: 1rem;
-  margin: 0.9rem 0 0 0;
-`;
-const MyInfos = () => {
-  return (
-    <>
-      <Wrapper>
-        <h1>내 정보이빈당</h1>
-      </Wrapper>
-    </>
-  );
-};
-
-export default MyInfos;
+version https://git-lfs.github.com/spec/v1
+oid sha256:098d6475fceddaaa7b78abe58abd8e86ae747fa38930452461c6daf260d66e99
+size 617
