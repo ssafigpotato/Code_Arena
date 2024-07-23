@@ -2,6 +2,8 @@ package com.example.arena.domain.community.dto.response;
 
 import java.util.UUID;
 
+import com.example.arena.domain.community.entity.BoardType;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -11,8 +13,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class PostBoardResponse {
 	private UUID boardId;
-	private UUID memberId;
 	private String title;
 	private String content;
-	private String type;
+	private BoardType type;
 }

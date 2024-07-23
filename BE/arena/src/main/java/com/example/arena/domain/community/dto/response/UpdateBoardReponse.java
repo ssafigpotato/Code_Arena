@@ -11,7 +11,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class UpdateBoardReponse {
 	private UUID boardId;
-	private UUID memberId;
 	private String title;
 	private String content;
 	
