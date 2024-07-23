@@ -11,8 +11,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class UpdateBoardRequest {
 	private UUID boardId;
-	private UUID memberId;
 	private String title;
 	private String content;
-	private String type;
 }
