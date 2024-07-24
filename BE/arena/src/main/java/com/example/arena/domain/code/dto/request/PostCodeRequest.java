@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9e91e5a68685c73cf1c90201616838e3a4dc295faac6f9033e0fc15d73b6c201
-size 355
+package com.example.arena.domain.code.dto.request;
+
+import com.example.arena.domain.code.entity.Language;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+public class PostCodeRequest {
+	private String problem;
+	private Language language;
+	private String content;
+}
