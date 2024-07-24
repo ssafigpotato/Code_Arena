@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7617c91a82c427b25efe3597e2003727c1e2085959a648829b4ac660bad97751
-size 411
+package com.example.arena.domain.config;
+
+import lombok.RequiredArgsConstructor;
+import org.kurento.client.KurentoClient;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@RequiredArgsConstructor
+@Configuration
+public class KurentoClientConfig {
+    @Bean
+    public KurentoClient kurentoClient() {
+        return KurentoClient.create();
+    }
+}
