@@ -1,15 +1,3 @@
-package com.example.arena.domain.community.repository;
-
-import java.util.List;
-import java.util.UUID;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
-
-import com.example.arena.domain.community.entity.Comment;
-
-@Repository
-public interface CommentRepository extends JpaRepository<Comment, UUID> {
-	List<Comment> findByBoardId(UUID boardId);
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0ad0681f42cb1145d7cb066c619d66f9507310638aabe9f6347be9159809d603
+size 642
