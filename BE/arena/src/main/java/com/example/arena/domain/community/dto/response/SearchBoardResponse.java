@@ -12,6 +12,6 @@ public class SearchBoardResponse {
 	private String title;
 	private String nickname;
 //	private Date createdAt; 구현 필요
-	private int comments;
+	private long comments;
 	private int likes;
 }
