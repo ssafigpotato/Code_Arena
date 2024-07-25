@@ -12,4 +12,6 @@ import lombok.NoArgsConstructor;
 public class ExecuteCodeRequest {
 	private String content;
 	private Language language;
+	private String input;
+	private String expectedOutput;
 }
