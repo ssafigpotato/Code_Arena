@@ -1,6 +1,6 @@
 package com.example.arena.domain.community.dto.request;
 
-import java.util.UUID;
+import com.example.arena.domain.community.entity.BoardType;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -12,8 +12,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @Setter
 public class PostBoardRequest {
-	private UUID memberId;
 	private String title;
 	private String content;
-	private String type;
+	private BoardType type;
 }
