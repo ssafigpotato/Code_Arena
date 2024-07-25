@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9e7c6799fc36d93fd21e7cf57bf1218764438576458980f49a75b127a58798b8
-size 299
+package com.example.arena.domain.member.dto.response;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+public class AfterLoginResponse {
+
+//    존재 이유를 모르겠음 (회원 가입시 바로 로그인 처리를 할 때 대비?)
+//    private SignStatus signStatus;
+    private MemberResponse memberDto;
+    private TokenResponse tokenDto;
+}
