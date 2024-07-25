@@ -14,5 +14,5 @@ import lombok.Setter;
 public class DetailBoardResponse {
 	private Board board;
 	private String memberNickName;
-	private int comments;
+	private long comments;
 }
