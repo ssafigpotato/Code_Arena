@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a250bd5e938810c6b3b2c661bc6a92d8f36698ebd77c8634691cc80866159cae
-size 351
+package com.example.arena.domain.room.entity;
+
+import java.util.UUID;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Entity
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+public class Room {
+	@Id
+	private UUID id;
+	private UUID memberId;
+}

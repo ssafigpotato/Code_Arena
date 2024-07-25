@@ -1,16 +1,3 @@
-package com.example.arena.domain.community.repository;
-
-import java.util.Optional;
-import java.util.UUID;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
-
-import com.example.arena.domain.community.entity.BoardLike;
-
-@Repository
-public interface BoardLikeRepository extends JpaRepository<BoardLike, UUID>{
-
-	Optional<BoardLike> findByMemberIdAndBoardId(UUID memberId, UUID boardId);
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ddb899053d5e061a288483230e25e5387bd91cee80b5f6136191678aa4a35781
+size 450
