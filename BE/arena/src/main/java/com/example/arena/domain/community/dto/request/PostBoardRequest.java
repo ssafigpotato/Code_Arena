@@ -1,18 +1,3 @@
-package com.example.arena.domain.community.dto.request;
-
-import com.example.arena.domain.community.entity.BoardType;
-
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
-@Getter
-@NoArgsConstructor
-@AllArgsConstructor
-@Setter
-public class PostBoardRequest {
-	private String title;
-	private String content;
-	private BoardType type;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2bfe2b66d00781da05bdd4153a1103c9a95aa9e10e92decde86d754a5a6291a7
+size 392

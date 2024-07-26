@@ -1,18 +1,3 @@
-package com.example.arena.domain.community.dto.response;
-
-import com.example.arena.domain.community.entity.Board;
-
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
-@Getter
-@NoArgsConstructor
-@AllArgsConstructor
-@Setter
-public class DetailBoardResponse {
-	private Board board;
-	private String memberNickName;
-	private long comments;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4fe76d4d1ea8ad3d986f42c0fde8e586f6b3193db89228a554e9ceda07339019
+size 397
