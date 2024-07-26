@@ -1,7 +1,7 @@
 import React from "react";
 
 interface Text {
-  name: string;
+  name?: string;
 }
 const ProgramLangImg: React.FC<Text> = (Text) => {
   const imgSrc = "/images/" + Text.name + ".png";
