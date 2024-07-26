@@ -1,14 +1,3 @@
-import React, { useState, useRef, useEffect } from "react";
-import styled from "styled-components";
-import BorderButton from "@/components/common/button/BorderButton";
-import Link from "next/link";
-
-const Terminal = () => {
-  return (
-    <>
-      <h1>코드 터미널</h1>
-    </>
-  );
-};
-
-export default Terminal;
+version https://git-lfs.github.com/spec/v1
+oid sha256:12885ba0fb479ed0e772604e70515312533bf91230d7c96bf0b67593359c195f
+size 316
