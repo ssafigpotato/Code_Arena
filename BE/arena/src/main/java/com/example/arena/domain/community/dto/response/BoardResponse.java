@@ -13,5 +13,5 @@ import lombok.Setter;
 @Setter
 public class BoardResponse {
 	private Board board;
-	private String memberNickName;
+	private String memberNickname;
 }
