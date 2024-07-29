@@ -13,6 +13,6 @@ import lombok.Setter;
 @Setter
 public class DetailBoardResponse {
 	private Board board;
-	private String memberNickName;
+	private String memberNickname;
 	private long comments;
 }
