@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:db146d982af67d0e8dbffcfd7a549e7912d22972158b9a48f449e8f8871bb421
-size 328
+import { create } from "zustand";
+
+interface BearState {
+  bears: number;
+  increase: () => void;
+  decrease: () => void;
+}
+
+export const useBearStore = create<BearState>((set) => ({
+  bears: 0,
+  increase: () => set((state) => ({ bears: state.bears + 1 })),
+  decrease: () => set((state) => ({ bears: state.bears - 1 })),
+}));
