@@ -11,6 +11,7 @@ import java.util.UUID;
 @AllArgsConstructor
 public class UpdateGroupRequest {
     private UUID groupId;
-    private String curName;
     private String changeName;
+    private String information;
+    private String language;
 }
