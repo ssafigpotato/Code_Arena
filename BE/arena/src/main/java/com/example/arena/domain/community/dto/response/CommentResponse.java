@@ -1,6 +1,6 @@
 package com.example.arena.domain.community.dto.response;
 
-import java.util.UUID;
+import java.time.LocalDateTime;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -16,4 +16,5 @@ public class CommentResponse {
 	private int likes;
 	private boolean isSecret;
 	private String nickname;
+	private LocalDateTime createdAt;
 }
