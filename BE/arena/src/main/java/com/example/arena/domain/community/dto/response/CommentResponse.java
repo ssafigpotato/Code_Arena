@@ -10,6 +10,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class CommentResponse {
+	// memberId 담아야함
+	private UUID id;
 	private String content;
 	private int likes;
 	private boolean isSecret;
