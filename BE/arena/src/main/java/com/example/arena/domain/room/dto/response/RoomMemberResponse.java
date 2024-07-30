@@ -1,19 +1,3 @@
-package com.example.arena.domain.room.dto.response;
-
-import com.example.arena.domain.room.entity.InterviewerType;
-import com.example.arena.domain.room.entity.RoomMemberStatus;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-
-import java.util.UUID;
-
-@Getter
-@NoArgsConstructor
-@AllArgsConstructor
-public class RoomMemberResponse {
-    private UUID roomId;
-    private UUID memberId;
-    private InterviewerType interviewerType;
-    private RoomMemberStatus status;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:61d85b2b5d470320380d9d64aa84555954068452c1831ee53e0ec0035ad45afb
+size 507

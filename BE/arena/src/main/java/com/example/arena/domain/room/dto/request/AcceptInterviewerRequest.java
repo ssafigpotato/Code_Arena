@@ -1,15 +1,3 @@
-package com.example.arena.domain.room.dto.request;
-
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-
-import java.util.UUID;
-
-@Getter
-@NoArgsConstructor
-@AllArgsConstructor
-public class AcceptInterviewerRequest {
-    private UUID roomId;
-    private UUID interviewerId;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:40a650f346a65c784364eb30fbeebd51d1b10cd8b94154881af54f3cd580ba8e
+size 312
