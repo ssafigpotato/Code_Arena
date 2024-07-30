@@ -12,4 +12,6 @@ public class MakeGroupRequest {
     private String groupName;
     private GroupType groupType;
     private Integer maxNum;
+    private String information;
+    private String language;
 }
