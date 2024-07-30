@@ -1,20 +1,3 @@
-package com.example.arena.domain.community.dto.response;
-
-import java.util.UUID;
-
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-
-@Getter
-@NoArgsConstructor
-@AllArgsConstructor
-public class LikeResponse {
-	private UUID boardId;
-	private UUID memberId;
-	private int likes;
-
-	public LikeResponse(int likes) {
-		this.likes = likes;
-	}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9a743a45d3a6ec5d5b8fd55aa7f59189bdb0b0a6fa582b77003580bef4961d37
+size 376
