@@ -12,6 +12,7 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 public class RoomMemberResponse {
+    private UUID roomId;
     private UUID memberId;
     private InterviewerType interviewerType;
     private RoomMemberStatus status;
