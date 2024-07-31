@@ -5,12 +5,13 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
+import java.util.UUID;
 
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class GroupDetailResponse {
-    private GroupResponse groupResponse;
-    private List<GroupMemberDetailResponse> groupMembers;
+public class GroupMemberDetailResponse {
+    private UUID groupId;
+    private Integer meetingTime;
+    private MemberResponse memberResponse;
 }
