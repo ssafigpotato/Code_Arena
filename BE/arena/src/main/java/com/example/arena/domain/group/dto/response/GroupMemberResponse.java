@@ -13,5 +13,7 @@ import java.util.UUID;
 public class GroupMemberResponse {
     private UUID groupId;
     private UUID memberId;
+    private String memberEmail;
+    private String memberNickname;
     private GroupInviteCode inviteCode;
 }
