@@ -11,4 +11,6 @@ public interface CommentLikeRepository extends JpaRepository<CommentLike, UUID> 
 
 	Optional<CommentLike> findByMemberIdAndBoardId(UUID memberId, UUID boardId);
 
+	Optional<CommentLike> findByCommentIdAndBoardId(UUID commentId, UUID boardId);
+
 }
