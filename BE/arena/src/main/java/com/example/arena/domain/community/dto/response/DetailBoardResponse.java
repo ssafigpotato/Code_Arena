@@ -1,21 +1,3 @@
-package com.example.arena.domain.community.dto.response;
-
-import java.util.UUID;
-
-import com.example.arena.domain.community.entity.Board;
-
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
-@Getter
-@NoArgsConstructor
-@AllArgsConstructor
-@Setter
-public class DetailBoardResponse {
-	private Board board;
-	private String memberNickname;
-	private long comments;
-	private UUID memberId;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:96627139664a1827abac510976ca6d6c2f5c0736c2b5f8377126d9887fe839be
+size 445
