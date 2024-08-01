@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:11f6c028dca6af6c810f32eec2d0b54a50b05debe24e30243901355625c3e456
-size 484
+package com.example.arena.domain.community.dto.response;
+
+import java.time.LocalDateTime;
+import java.util.UUID;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+public class CommentResponse {
+	// memberId 담아야함
+	private UUID id;
+	private String content;
+	private int likes;
+	private boolean isSecret;
+	private String nickname;
+	private LocalDateTime createdAt;
+	private UUID memberId;
+}
