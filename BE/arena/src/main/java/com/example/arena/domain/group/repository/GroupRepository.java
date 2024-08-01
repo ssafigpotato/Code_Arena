@@ -10,6 +10,8 @@ import java.util.UUID;
 
 public interface GroupRepository extends JpaRepository<Group, UUID> {
 
-    @Query(value = "SELECT g FROM Group g JOIN FETCH g.leader")
+    @Query(value = "SELECT g FROM Group g JOIN FETCH g.leader ORDER BY g.createdAt DESC")
     List<Group> findAllWithLeader();
+
+
 }
