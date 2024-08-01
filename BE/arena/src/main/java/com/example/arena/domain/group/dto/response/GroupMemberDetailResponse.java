@@ -1,17 +1,3 @@
-package com.example.arena.domain.group.dto.response;
-
-import com.example.arena.domain.member.dto.response.MemberResponse;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-
-import java.util.UUID;
-
-@Getter
-@NoArgsConstructor
-@AllArgsConstructor
-public class GroupMemberDetailResponse {
-    private UUID groupId;
-    private Integer meetingTime;
-    private MemberResponse memberResponse;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:40a06336a9b02f96e232a3d674186c01b762daa620c35c6f065efb39b5aa2d8e
+size 524
