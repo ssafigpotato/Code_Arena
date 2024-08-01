@@ -18,4 +18,5 @@ public class CommentResponse {
 	private boolean isSecret;
 	private String nickname;
 	private LocalDateTime createdAt;
+	private UUID memberId;
 }
