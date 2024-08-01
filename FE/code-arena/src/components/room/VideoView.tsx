@@ -1,14 +1,3 @@
-import React, { useState, useRef, useEffect } from "react";
-import styled from "styled-components";
-import BorderButton from "@/components/common/button/BorderButton";
-import Link from "next/link";
-
-const VideoView = () => {
-  return (
-    <>
-      <h1> 화상 화면</h1>
-    </>
-  );
-};
-
-export default VideoView;
+version https://git-lfs.github.com/spec/v1
+oid sha256:0992f0c7f128814a642b4e758003f60e8c33b1c33c3dcf5f3b15c9f3882e6682
+size 6315

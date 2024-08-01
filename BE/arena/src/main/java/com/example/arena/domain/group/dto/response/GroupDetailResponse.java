@@ -12,5 +12,5 @@ import java.util.List;
 @AllArgsConstructor
 public class GroupDetailResponse {
     private GroupResponse groupResponse;
-    private List<MemberResponse> groupMembers;
+    private List<GroupMemberDetailResponse> groupMembers;
 }
