@@ -18,5 +18,4 @@ public class DetailBoardResponse {
 	private String memberNickname;
 	private long comments;
 	private UUID memberId;
-	// memberid
 }
