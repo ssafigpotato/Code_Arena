@@ -1,4 +1,4 @@
-package com.example.arena.domain.room.dto.request;
+package com.example.arena.domain.group.dto.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,7 +9,7 @@ import java.util.UUID;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class InviteInterviewerRequest {
-    private UUID roomId;
-    private UUID interviewerId;
+public class WithDrawGroupRequest {
+    private UUID groupId;
+    private UUID memberId;
 }
