@@ -1,16 +1,3 @@
-package com.example.arena.domain.code.dto.request;
-
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
-@Getter
-@NoArgsConstructor
-@AllArgsConstructor
-@Setter
-public class MessageDto {
-	private String sender;
-	private String content;
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:53f8e0be18227c6f01e33c6796b954c15487c1d3247a3ae88b62b9d3c007be96
+size 297
