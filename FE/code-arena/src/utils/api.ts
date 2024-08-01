@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:8080",
+  baseURL: "https://localhost:443",
   timeout: 10000,
 });
 api.defaults.headers.access = localStorage.getItem("access");
