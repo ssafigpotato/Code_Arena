@@ -1,13 +1,3 @@
-package com.example.arena.domain.group.repository;
-
-import com.example.arena.domain.group.entity.Group;
-import com.example.arena.domain.group.entity.GroupMember;
-import com.example.arena.domain.member.entity.Member;
-import org.springframework.data.jpa.repository.JpaRepository;
-
-import java.util.Optional;
-import java.util.UUID;
-
-public interface GroupMemberRepository extends JpaRepository<GroupMember, UUID> {
-    Optional<GroupMember> findByGroupAndMember(Group group, Member member);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:84c1438d17fcf41daace325690208b1711ef1696f3a10051f973f9d2e2245750
+size 490
