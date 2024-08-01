@@ -1,15 +1,3 @@
-package com.example.arena.domain.group.repository;
-
-import com.example.arena.domain.group.entity.Group;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
-
-
-import java.util.List;
-import java.util.UUID;
-
-public interface GroupRepository extends JpaRepository<Group, UUID> {
-
-    @Query(value = "SELECT g FROM Group g JOIN FETCH g.leader")
-    List<Group> findAllWithLeader();
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:66adfa306a22a84df07e069b677079389d79d74c92f99c6b045d07c438d9082b
+size 471

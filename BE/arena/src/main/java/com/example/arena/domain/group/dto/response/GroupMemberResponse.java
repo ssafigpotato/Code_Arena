@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4a3f913be74dfa0ea5695cc9c6c2c9db2809cdb0b2bf9003b838619141304d9a
-size 474
+package com.example.arena.domain.group.dto.response;
+
+import com.example.arena.domain.group.entity.GroupInviteCode;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+import java.util.UUID;
+
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+public class GroupMemberResponse {
+    private UUID groupId;
+    private UUID memberId;
+    private String memberEmail;
+    private String memberNickname;
+    private GroupInviteCode inviteCode;
+}
