@@ -10,7 +10,6 @@ import lombok.Setter;
 @AllArgsConstructor
 @Setter
 public class MessageDto {
-	private String sender;
 	private String content;
-
+	private String roomId;
 }
