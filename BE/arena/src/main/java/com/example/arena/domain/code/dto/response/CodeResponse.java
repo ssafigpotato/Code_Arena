@@ -1,18 +1,3 @@
-package com.example.arena.domain.code.dto.response;
-
-import com.example.arena.domain.code.entity.Language;
-
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-
-@Getter
-@NoArgsConstructor
-@AllArgsConstructor
-public class CodeResponse {
-	// room 이름
-	// 맴버이름
-	private String problem;
-	private Language language;
-	private String content;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:542f74a38ba4ff29347a22482d8ecb7add26f05d5d340524e9b3708f66821d6b
+size 730
