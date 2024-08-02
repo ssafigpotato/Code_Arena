@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0d6c930a1e3acc25a4d545fb158c1ddced2eb7ea1ea05b21d9fe38c0a1b6d36c
-size 478
+package com.example.arena.domain.community.repository;
+
+import java.util.Optional;
+import java.util.UUID;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.example.arena.domain.community.entity.CommentLike;
+
+public interface CommentLikeRepository extends JpaRepository<CommentLike, UUID> {
+
+	Optional<CommentLike> findByMemberIdAndBoardId(UUID memberId, UUID boardId);
+
+	Optional<CommentLike> findByCommentIdAndBoardId(UUID commentId, UUID boardId);
+
+}
