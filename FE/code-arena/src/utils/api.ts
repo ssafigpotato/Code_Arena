@@ -1,10 +1,3 @@
-import axios from "axios";
-
-const api = axios.create({
-  baseURL: "https://localhost:443",
-  timeout: 10000,
-});
-api.defaults.headers.access = localStorage.getItem("access");
-api.defaults.headers.refresh = localStorage.getItem("refresh");
-api.defaults.withCredentials = true;
-export default api;
+version https://git-lfs.github.com/spec/v1
+oid sha256:eec6ba04333a758d0ea4fc86b31c41c403c026fcd98b3db182d7f0a9a8961013
+size 985
