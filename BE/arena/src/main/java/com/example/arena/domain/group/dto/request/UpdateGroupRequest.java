@@ -1,17 +1,3 @@
-package com.example.arena.domain.group.dto.request;
-
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-
-import java.util.UUID;
-
-@Getter
-@NoArgsConstructor
-@AllArgsConstructor
-public class UpdateGroupRequest {
-    private UUID groupId;
-    private String changeName;
-    private String information;
-    private String language;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7a4ba8ab85ca36a8fd84e87e402aaac2cd343eb539878b9bc8b07984332789c8
+size 368
