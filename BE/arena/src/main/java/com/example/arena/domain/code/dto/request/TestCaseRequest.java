@@ -10,7 +10,7 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 public class TestCaseRequest {
-    private UUID roomId;
+    private String roomId;
     private TestCase[] testcases;
 }
 
