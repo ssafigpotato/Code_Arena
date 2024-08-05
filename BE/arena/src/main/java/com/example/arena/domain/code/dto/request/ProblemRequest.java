@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:60356d5f4d917e76ec27acb9618dbabdc63f405f38f4ee4450ec1dacbb66959c
-size 443
+package com.example.arena.domain.code.dto.request;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+import java.util.UUID;
+
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+public class ProblemRequest {
+    private UUID roomId;
+    private String description;
+    private String[] inputCondition;
+    private String[] outputCondition;
+    private TestCase[] examples;
+    private TestCase[] testcases;
+}
