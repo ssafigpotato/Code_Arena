@@ -10,6 +10,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class TestCaseRequest {
-	private UUID roomId;
-	private TestCase[] testcases;
+    private String roomId;
+    private TestCase[] testcases;
 }
