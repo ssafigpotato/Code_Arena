@@ -1,17 +1,3 @@
-package com.example.arena.domain.community.dto.response;
-
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-
-// Response : 제목 / 닉네임 / 작성일 / 추천 / 댓글 수
-@Getter
-@NoArgsConstructor
-@AllArgsConstructor
-public class SearchBoardResponse {
-	private String title;
-	private String nickname;
-//	private Date createdAt; 구현 필요
-	private long comments;
-	private int likes;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8bbf75718a67f424bdb178ff0d4339ef98b1977c0efabef5c2f1099b94d2af56
+size 579
