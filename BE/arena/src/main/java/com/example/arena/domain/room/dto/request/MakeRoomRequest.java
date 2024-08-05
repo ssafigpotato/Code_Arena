@@ -1,15 +1,3 @@
-package com.example.arena.domain.room.dto.request;
-
-import com.example.arena.domain.room.entity.RoomStatus;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-
-@Getter
-@NoArgsConstructor
-@AllArgsConstructor
-public class MakeRoomRequest {
-    private String roomName;
-    private RoomStatus roomStatus;
-    private String password;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:857ae903b1f807d8c1bafe58bbc0d647ce1b4682b3f44ca65aebc1eb70ac9928
+size 526
