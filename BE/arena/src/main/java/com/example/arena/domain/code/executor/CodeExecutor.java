@@ -1,8 +1,3 @@
-package com.example.arena.domain.code.executor;
-
-import com.example.arena.domain.code.dto.request.CodeRequest;
-import com.example.arena.domain.code.dto.response.CodeResponse;
-
-public interface CodeExecutor {
-	CodeResponse execute(String input, CodeRequest request) throws Exception;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9f4216b9e8e66b9f21970c80aaeb0e86206e519968c3bf6b2e9c37c1404e6087
+size 285
