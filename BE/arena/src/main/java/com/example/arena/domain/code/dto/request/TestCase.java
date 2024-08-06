@@ -7,7 +7,8 @@ import lombok.NoArgsConstructor;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class TestCaseRequest {
-	private String roomId;
-	private TestCase[] testcases;
+public class TestCase {
+	private int id;
+	private String in;
+	private String out;
 }
