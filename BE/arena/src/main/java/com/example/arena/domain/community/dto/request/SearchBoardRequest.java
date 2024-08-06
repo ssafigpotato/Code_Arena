@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:25d98f0cdc676d8dbfe983ea18335e53ad6af0515afe57eec2f5084e7ed785f1
-size 321
+package com.example.arena.domain.community.dto.request;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+//Request : 검색 타입 / 키워드
+public class SearchBoardRequest {
+	private String searchType;
+	private String keyword;
+}
