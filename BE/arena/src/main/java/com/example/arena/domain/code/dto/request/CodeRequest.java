@@ -12,5 +12,4 @@ import lombok.NoArgsConstructor;
 public class CodeRequest {
 	private String code;
 	private Language language;
-	private boolean hidden;
 }
