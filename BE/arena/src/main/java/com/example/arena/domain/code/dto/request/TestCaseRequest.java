@@ -1,7 +1,5 @@
 package com.example.arena.domain.code.dto.request;
 
-import java.util.UUID;
-
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -10,6 +8,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class TestCaseRequest {
-	private UUID roomId;
+	private String roomId;
 	private TestCase[] testcases;
 }
