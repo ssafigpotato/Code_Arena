@@ -9,6 +9,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 //Request : 검색 타입 / 키워드
 public class SearchBoardRequest {
-	private SearchType searchType;
+	private String searchType;
 	private String keyword;
 }
