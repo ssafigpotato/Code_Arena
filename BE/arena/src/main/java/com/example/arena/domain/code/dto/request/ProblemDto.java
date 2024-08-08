@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:65c65539099e291045ecff6ff6d279bb51051de8cf95b83761f707b099d38494
-size 365
+package com.example.arena.domain.code.dto.request;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+public class ProblemDto {
+	private String roomId;
+	private String description;
+	private String inputCondition;
+	private String outputCondition;
+	private TestCase[] examples;
+}
