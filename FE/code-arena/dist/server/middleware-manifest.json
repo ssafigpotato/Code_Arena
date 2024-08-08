@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2ba8c3bdfcd8d5a2be52812e496cb2ea048bc43426dd170fc4a2e1849be2b132
-size 752
+{
+  "version": 3,
+  "middleware": {},
+  "functions": {},
+  "sortedMiddleware": []
+}
