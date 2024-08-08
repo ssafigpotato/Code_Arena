@@ -1,3 +1,1 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3ac996ccb6ef1f195c7195c9ac7fb294ab923778429b1ee335dd982c76f2ef90
-size 424
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[224],{20547:function(e){function n(e){e.languages["nand2tetris-hdl"]={comment:/\/\/.*|\/\*[\s\S]*?(?:\*\/|$)/,keyword:/\b(?:BUILTIN|CHIP|CLOCKED|IN|OUT|PARTS)\b/,boolean:/\b(?:false|true)\b/,function:/\b[A-Za-z][A-Za-z0-9]*(?=\()/,number:/\b\d+\b/,operator:/=|\.\./,punctuation:/[{}[\];(),:]/}}e.exports=n,n.displayName="nand2tetrisHdl",n.aliases=[]}}]);
