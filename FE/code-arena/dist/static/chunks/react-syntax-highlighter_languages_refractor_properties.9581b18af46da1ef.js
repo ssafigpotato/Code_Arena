@@ -1,1 +1,3 @@
-"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[81],{76934:function(t){function e(t){t.languages.properties={comment:/^[ \t]*[#!].*$/m,"attr-value":{pattern:/(^[ \t]*(?:\\(?:\r\n|[\s\S])|[^\\\s:=])+(?: *[=:] *(?! )| ))(?:\\(?:\r\n|[\s\S])|[^\\\r\n])+/m,lookbehind:!0},"attr-name":/^[ \t]*(?:\\(?:\r\n|[\s\S])|[^\\\s:=])+(?= *[=:]| )/m,punctuation:/[=:]/}}t.exports=e,e.displayName="properties",e.aliases=[]}}]);
+version https://git-lfs.github.com/spec/v1
+oid sha256:b572a3e1fde0306ab5bd3eb5c8edf657034f476f78cefd34c00e966e986915d6
+size 433
