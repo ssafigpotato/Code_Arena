@@ -1,23 +1,3 @@
-import React, { useState, useRef, useEffect } from "react";
-import styled from "styled-components";
-
-const Wrapper = styled.div`
-  display: flex;
-  height: 14rem;
-  padding: 0.5rem;
-  background-color: rgba(255, 255, 255, 0.1);
-  width: 17rem;
-  border-radius: 0.5rem;
-`;
-
-const ChatForm = () => {
-  return (
-    <>
-      <Wrapper>
-        <h1> 모달이에용</h1>
-      </Wrapper>
-    </>
-  );
-};
-
-export default ChatForm;
+version https://git-lfs.github.com/spec/v1
+oid sha256:c1c829dc092f3ab10dde7b799f0ee5059a569c3f845b1b7360ab4ae0aeb9563d
+size 2971
