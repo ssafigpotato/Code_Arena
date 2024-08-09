@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:92163a98225570b7cfb2992dfa404ecf4113791caf7a4efece1dbe6692276f8e
-size 266
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: false, // React Strict Mode 비활성화
+  compiler: {
+    styledComponents: true,
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  distDir: "dist",
+};
+
+export default nextConfig;
