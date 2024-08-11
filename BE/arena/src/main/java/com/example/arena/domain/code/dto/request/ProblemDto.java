@@ -4,10 +4,12 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
+
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class ProblemDto {
+public class ProblemDto implements Serializable {
 	private String roomId;
 	private String description;
 	private String inputCondition;
