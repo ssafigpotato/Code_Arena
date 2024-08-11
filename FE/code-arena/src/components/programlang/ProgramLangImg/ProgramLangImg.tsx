@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fbca9e41d2f4eb3e980e832d0e35bb028372066042d794188d90c4c5df4cd59c
-size 257
+import React from "react";
+
+interface Text {
+  name?: string;
+}
+const ProgramLangImg: React.FC<Text> = (Text) => {
+  const imgSrc = "/images/" + Text.name + ".png";
+  return <img src={imgSrc} style={{ width: "100%" }} />;
+};
+
+export default ProgramLangImg;
