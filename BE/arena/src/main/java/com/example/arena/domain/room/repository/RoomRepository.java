@@ -1,11 +1,3 @@
-package com.example.arena.domain.room.repository;
-
-import java.util.UUID;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
-import com.example.arena.domain.room.entity.Room;
-
-public interface RoomRepository extends JpaRepository<Room, UUID> {
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a4fe2e40243b31095d3e87b8c2842a1a0c1de525507c6286a51e57a5feee17a5
+size 298
