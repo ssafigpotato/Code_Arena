@@ -1,7 +1,5 @@
 package com.example.arena.domain.code.dto.request;
 
-import com.example.arena.domain.code.dto.response.ExecuteCodeResponse;
-
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,7 +7,7 @@ import lombok.NoArgsConstructor;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class TerminalDto {
+public class TerminalDto<T> {
 	private String roomId;
-	private ExecuteCodeResponse[] responses;
+	private T[] responses;
 }
