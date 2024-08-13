@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0c78059474b98884084c7bb98bea4023425cafa6fbb21de40adbcf1066721309
-size 356
+package com.example.arena.domain.code.dto.request;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+public class TerminalDto<T> {
+	private String roomId;
+	private T[] responses;
+}
