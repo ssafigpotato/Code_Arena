@@ -1,16 +1,3 @@
-package com.example.arena.domain.report.mapper;
-
-import org.springframework.stereotype.Component;
-
-import com.example.arena.domain.code.dto.request.ProblemDto;
-import com.example.arena.domain.report.dto.response.ReportResponse;
-import com.example.arena.domain.report.entity.Report;
-
-@Component
-public class ReportMapper {
-
-	public ReportResponse entityToReportResponse(Report report, ProblemDto problem, String examples) {
-		return new ReportResponse(report,problem,examples);
-	}
-	
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:fbf8ea8d199a11cf01b410f906fede395f34fd96b80741389e83e773bb57c81c
+size 1010

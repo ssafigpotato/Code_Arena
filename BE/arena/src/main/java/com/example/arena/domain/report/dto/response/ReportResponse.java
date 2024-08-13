@@ -1,17 +1,3 @@
-package com.example.arena.domain.report.dto.response;
-
-import com.example.arena.domain.code.dto.request.ProblemDto;
-import com.example.arena.domain.report.entity.Report;
-
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-
-@Getter
-@NoArgsConstructor
-@AllArgsConstructor
-public class ReportResponse {
-	private Report report;
-	private ProblemDto problem;
-	private String examples;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6c0c9fc0b9cd23cae48f23885b52214216ca58cdd38039135e67cabd5eb99e44
+size 801

@@ -10,4 +10,6 @@ import com.example.arena.domain.report.entity.Review;
 @Repository
 public interface ReviewRepository extends JpaRepository<Review, UUID> {
 
+	Review findByMerberId(UUID id);
+
 }
