@@ -8,4 +8,6 @@ import com.example.arena.domain.room.entity.Room;
 
 public interface RoomRepository extends JpaRepository<Room, UUID> {
 
+	Room findByTesterId(UUID memberId);
+
 }
