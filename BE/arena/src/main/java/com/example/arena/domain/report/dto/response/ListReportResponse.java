@@ -1,21 +1,3 @@
-package com.example.arena.domain.report.dto.response;
-
-import java.time.LocalDateTime;
-import java.util.UUID;
-
-import com.example.arena.domain.room.entity.RoomLanguage;
-
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-
-@Getter
-@NoArgsConstructor
-@AllArgsConstructor
-public class ListReportResponse {
-	private UUID reportId;
-	private String title;
-	private LocalDateTime startTime;
-	private RoomLanguage language;
-	private int corrects;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:066f90b21f7cc59228ee70255fc0c75e9fa0b51a94b8ebd9f7c1d876f11f48c5
+size 534
