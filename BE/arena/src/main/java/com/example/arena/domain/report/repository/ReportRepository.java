@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:102bd82c46b8ea3f2bbb459f9a129b45570fb21fb6868911c0eed674d68d0dc7
-size 451
+package com.example.arena.domain.report.repository;
+
+import java.util.List;
+import java.util.UUID;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.example.arena.domain.report.entity.Report;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface ReportRepository extends JpaRepository<Report, UUID> {
+
+	List<Report> findByTesterId(UUID memberId);
+
+}
