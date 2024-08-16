@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2891d5f6d075d34c8601cb907ffebd710bdcfd0734f68b1bed2c310ebb3ff924
-size 316
+package com.example.arena.domain.code.dto.request;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
+public class ChatDto {
+	private String roomId;
+	private String nickname; // sender로 수정가능
+	private String content;
+
+}
