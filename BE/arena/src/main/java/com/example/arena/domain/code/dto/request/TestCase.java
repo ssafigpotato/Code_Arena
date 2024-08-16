@@ -1,16 +1,3 @@
-package com.example.arena.domain.code.dto.request;
-
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-
-import java.io.Serializable;
-
-@Getter
-@NoArgsConstructor
-@AllArgsConstructor
-public class TestCase implements Serializable {
-	private int id;
-	private String in;
-	private String out;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2f084f00974a3ac5b5641fc7bd95b602a47aa13e6dd1997742aa40b5fb667ec0
+size 326
