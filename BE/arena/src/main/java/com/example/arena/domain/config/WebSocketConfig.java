@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1039357d606377a68c037323484735b0bdf87f510538812727647a779a166dd2
-size 848
+package com.example.arena.domain.config;
+
+import com.example.arena.domain.kurento.handler.KurentoHandler;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.socket.config.annotation.EnableWebSocket;
+import org.springframework.web.socket.config.annotation.WebSocketConfigurer;
+import org.springframework.web.socket.config.annotation.WebSocketHandlerRegistry;
+
+@Configuration
+@EnableWebSocket
+public class WebSocketConfig implements WebSocketConfigurer {
+
+    private final KurentoHandler kurentoHandler;
+
+    public WebSocketConfig(KurentoHandler kurentoHandler) {
+        this.kurentoHandler = kurentoHandler;
+    }
+
+    @Override
+    public void registerWebSocketHandlers(WebSocketHandlerRegistry registry) {
+        registry.addHandler(kurentoHandler, "/api/v1/groupCall").setAllowedOrigins("*");
+    }
+}

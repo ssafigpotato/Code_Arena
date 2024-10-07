@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4f0d510f12abbeec4a4a2baf609f8b92d3a6633ab18ff1c7d062b6853e202301
-size 798
+package com.example.arena.domain.community.entity;
+
+import java.util.UUID;
+
+import com.github.f4b6a3.ulid.UlidCreator;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import lombok.AccessLevel;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Getter
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
+public class BoardLike {
+	@Id
+	@Column(columnDefinition = "BINARY(16)")
+	private UUID id = UlidCreator.getMonotonicUlid().toUuid();
+	private UUID memberId;
+	private UUID boardId;
+	private boolean isLiked;
+
+	public BoardLike(UUID boardId, UUID memberId, boolean isLiked) {
+		this.boardId = boardId;
+		this.memberId = memberId;
+		this.isLiked = isLiked;
+	}
+
+	public void update(boolean isLiked) {
+		this.isLiked = isLiked;
+	}
+
+}

@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5d4dfb12cbe6673da1cf0cd45633b5744f2de0d3ad031c7c8393bbdce9a105c4
-size 1214
+package com.example.arena.domain.stream.controller;
+
+import lombok.RequiredArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.messaging.handler.annotation.DestinationVariable;
+import org.springframework.messaging.handler.annotation.MessageMapping;
+import org.springframework.messaging.handler.annotation.Payload;
+import org.springframework.stereotype.Controller;
+
+import java.util.UUID;
+
+@Controller
+@RequiredArgsConstructor
+public class StreamController {
+    private static final Logger log = LoggerFactory.getLogger(StreamController.class);
+    private final RabbitTemplate rabbitTemplate;
+
+    @Value("${rabbitmq.exchange.name}")
+    private String exchangeName;
+
+    @Value("${rabbitmq.routing.key}")
+    private String routingKey;
+
+    @MessageMapping("arena.share.{groupId}")
+    public void share(
+            @DestinationVariable("groupId") final Long groupId,
+            @Payload final SimpleRequest request
+    ) {
+        rabbitTemplate.convertAndSend(
+            exchangeName, routingKey+"." + groupId, request
+        );
+    }
+}

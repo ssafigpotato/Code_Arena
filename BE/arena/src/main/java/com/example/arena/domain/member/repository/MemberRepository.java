@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3ad94160706c017ea03a469df3444a64678a29c2042d07832650187b51e95de4
-size 614
+package com.example.arena.domain.member.repository;
+
+
+import com.example.arena.domain.member.entity.Member;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.Optional;
+import java.util.UUID;
+
+public interface MemberRepository extends JpaRepository<Member, UUID> {
+
+
+    Optional<Member> findByName(String name);
+
+    Optional<Member> findByEmail(String email);
+
+    Optional<Member> findByNickname(String nickname);
+
+    boolean existsByEmail(String email);
+
+    boolean existsByNickname(String nickname);
+
+    Optional<Member> findByEmailAndPassword(String email,String password);
+}

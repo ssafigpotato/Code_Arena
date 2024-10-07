@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b1c146b0d25ac906bcf5eba8037fd3c7a7d04d95fd07447639c4cf5283015b78
-size 795
+package com.example.arena.domain.room.dto.response;
+
+import com.example.arena.domain.room.entity.RoomLanguage;
+import com.example.arena.domain.room.entity.RoomStatus;
+import com.example.arena.domain.room.entity.StartStatus;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+import java.time.LocalDateTime;
+import java.util.UUID;
+
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+public class RoomResponse {
+    private UUID roomId;
+    private String name;
+    private String password;
+    private RoomStatus status;
+    private RoomLanguage roomLanguage;
+    private Integer testTime;
+    private Integer maxNum;
+    private Integer curNum;
+    private StartStatus startStatus;
+    private RoomMemberResponse tester;
+    private LocalDateTime startTime;
+}

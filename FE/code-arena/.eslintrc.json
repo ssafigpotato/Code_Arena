@@ -1,3 +1,93 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9dd17cfe51f57318e272204a550245c81b71162cbb98bfaec669996e8ebe7767
-size 2331
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es2020": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:react/recommended",
+    "prettier",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:@next/next/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2024,
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["react-refresh", "react", "@typescript-eslint", "import"],
+  "rules": {
+    "react-refresh/only-export-components": [
+      "warn",
+      { "allowConstantExport": true }
+    ],
+    "react/react-in-jsx-scope": "off",
+    "import/named": "error",
+    "import/default": "error",
+    "import/namespace": "error",
+    "import/no-unresolved": "error",
+    "import/no-unused-modules": "off",
+    "import/no-duplicates": "warn",
+    "import/first": "warn",
+    "no-use-before-define": "off",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      { "args": "none", "ignoreRestSiblings": true }
+    ],
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": "warn",
+    "react/prop-types": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "eqeqeq": "warn",
+    "curly": "warn",
+    "arrow-parens": ["warn", "always"],
+    "camelcase": "warn",
+    "no-console": "warn",
+    "@typescript-eslint/consistent-type-assertions": [
+      "error",
+      {
+        "assertionStyle": "as",
+        "objectLiteralTypeAssertions": "never"
+      }
+    ],
+    "@typescript-eslint/explicit-function-return-type": [
+      "warn",
+      {
+        "allowExpressions": true,
+        "allowTypedFunctionExpressions": true
+      }
+    ],
+    "@typescript-eslint/typedef": [
+      "warn",
+      {
+        "arrowParameter": false,
+        "variableDeclaration": false,
+        "variableDeclarationIgnoreFunction": true
+      }
+    ]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "alias": {
+        "map": [
+          ["/src", "./src"],
+          ["/public", "./public"]
+        ],
+        "extensions": [".js", ".jsx", ".ts", ".tsx", ".svg"]
+      }
+    }
+  }
+}

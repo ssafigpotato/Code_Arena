@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:485b9ef22975ef0ca163948b74bc0f5dcbf27b0db433c15926bd420d1ea3734e
-size 523
+package com.example.arena.global.error;
+
+import org.springframework.http.HttpStatus;
+
+public enum ErrorType {
+
+
+    // 4xx
+    USER_INVALID_JWT(10001, HttpStatus.UNAUTHORIZED),
+    USER_JWT_EXPIRED(10002, HttpStatus.UNAUTHORIZED),
+    USER_UNAUTHENTICATED(10003, HttpStatus.UNAUTHORIZED),
+    USER_NOT_FOUND(10004, HttpStatus.NOT_FOUND)
+
+    ;
+
+    public int code;
+    public HttpStatus httpStatus;
+
+    ErrorType(int code, HttpStatus httpStatus) {
+        this.code = code;
+        this.httpStatus = httpStatus;
+    }
+
+}

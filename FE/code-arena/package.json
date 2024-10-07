@@ -1,3 +1,60 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:17e3f0078c6d11ddd4b02464e367ef743e53bd70e126133b73ba01a6b2988ae8
-size 1628
+{
+  "name": "code-arena",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": "^20.15.1"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "export": "next export"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@monaco-editor/react": "^4.6.0",
+    "@mui/material": "^5.16.4",
+    "@stomp/stompjs": "^7.0.0",
+    "@toast-ui/editor-plugin-code-syntax-highlight": "^3.1.0",
+    "@toast-ui/react-editor": "^3.2.3",
+    "@types/prismjs": "^1.26.4",
+    "@types/styled-components": "^5.1.34",
+    "axios": "^1.7.2",
+    "babel-plugin-styled-components": "^2.1.4",
+    "chart.js": "^4.4.3",
+    "kurento-utils": "^7.0.0",
+    "next": "14.2.5",
+    "openai": "^4.53.2",
+    "pretendard": "^1.3.9",
+    "prismjs": "^1.29.0",
+    "react": "^18",
+    "react-chartjs-2": "^5.2.0",
+    "react-code-blocks": "^0.1.6",
+    "react-dom": "^18",
+    "react-hook-form": "^7.52.1",
+    "react-items-carousel": "^2.8.0",
+    "react-router-dom": "^6.25.1",
+    "sockjs-client": "^1.6.1",
+    "stompjs": "^2.3.3",
+    "styled-components": "^6.1.11",
+    "styled-reset": "^4.5.2",
+    "tui-color-picker": "^2.2.8",
+    "webrtc-adapter": "^9.0.1",
+    "zustand": "^4.5.4",
+    "zustand-persist": "^0.4.0"
+  },
+  "devDependencies": {
+    "@types/kurento-utils": "^6.7.4",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/sockjs-client": "^1.5.4",
+    "@types/stompjs": "^2.3.9",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5",
+    "typescript": "^5"
+  }
+}

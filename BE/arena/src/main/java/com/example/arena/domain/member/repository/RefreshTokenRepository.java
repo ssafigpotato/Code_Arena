@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:20b09239c1ebdc83738e42f46119b459794fa633e200c381972ed9bc0eb1d95a
-size 535
+package com.example.arena.domain.member.repository;
+
+import com.example.arena.domain.member.entity.RefreshToken;
+import jakarta.transaction.Transactional;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.Optional;
+import java.util.UUID;
+
+public interface RefreshTokenRepository extends JpaRepository<RefreshToken, UUID> {
+    Optional<RefreshToken> findByTokenKey(String tokenKey);
+
+    Boolean existsByTokenValue(String tokenValue);
+
+    @Transactional
+    void deleteByTokenValue(String tokenValue);
+}
